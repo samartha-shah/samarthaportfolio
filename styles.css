@@ -1,0 +1,145 @@
+/* Import Futuristic Gaming Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Base Style for the Page */
+body {
+    font-family: 'Orbitron', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #050505; /* Darker black for deep contrast */
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Header Styling with Super Cool Gaming Red-Black Neon Theme */
+header {
+    background: linear-gradient(135deg, #050505, #8B0000);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0px 0px 40px rgba(255, 0, 0, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Super Cool Glowing Neon Effect on Header Text */
+h1 {
+    font-size: 4rem; /* Larger font size for impact */
+    font-weight: bold;
+    text-shadow: 0 0 30px rgba(255, 0, 0, 1), 0 0 50px rgba(255, 69, 69, 0.8), 0 0 70px rgba(255, 0, 0, 0.7), 0 0 90px rgba(255, 0, 0, 1);
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect: Intensifying Glowing Shadow */
+h1:hover {
+    text-shadow: 0 0 40px rgba(255, 0, 0, 1), 0 0 70px rgba(255, 69, 69, 1), 0 0 100px rgba(255, 0, 0, 0.8), 0 0 130px rgba(255, 0, 0, 1);
+}
+
+/* Contact Info Glow Effect */
+.contact-info {
+    font-size: 1.5rem;
+    color: #ff3333;
+    margin-top: 15px;
+    text-shadow: 0px 0px 20px rgba(255, 0, 0, 0.9);
+}
+
+.contact-info a {
+    color: #ff1a1a;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    text-shadow: 0px 0px 20px rgba(255, 0, 0, 1);
+}
+
+/* Additional Glow and Shadow for Contact Info */
+.contact-info p {
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 10px rgba(255, 0, 0, 1), 0px 0px 20px rgba(255, 0, 0, 0.8);
+}
+
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    padding: 20px 0;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Individual Navigation Links with Glowing Effect */
+.navbar a {
+    background: linear-gradient(135deg, #ff0000, #8B0000);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem; /* Larger font size */
+    padding: 20px 40px; /* Larger padding for bigger buttons */
+    margin: 0 15px;
+    display: inline-block;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    transition: background 0.3s, color 0.3s, text-shadow 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+/* Hover Effect */
+.navbar a:hover {
+    background: linear-gradient(135deg, #ff1a1a, #ff4d4d);
+    color: #ffffff;
+    transform: scale(1.1); /* Slightly larger on hover */
+    text-shadow: 0px 0px 15px rgba(255, 0, 0, 1), 0px 0px 25px rgba(255, 0, 0, 1);
+}
+
+/* Active State */
+.navbar a:active {
+    transform: translateY(2px);
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+/* Add a glowing underline on hover */
+.navbar a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #ff1a1a;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar a:hover::before {
+    transform: scaleX(1);
+}
+
+/* Main Section Styling */
+#intro {
+    padding: 50px;
+    text-align: center;
+}
+
+#intro h2 {
+    font-size: 2rem;
+    color: #ff1a1a;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 1);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background: #8B0000;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.8);
+}
